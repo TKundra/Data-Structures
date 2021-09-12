@@ -1,5 +1,7 @@
 package Recursion;
 
+import java.util.HashSet;
+
 public class RecursionQuestions {
 
     static void towerOfHanoi(int n, String source, String handler, String destination){
@@ -90,6 +92,21 @@ public class RecursionQuestions {
         char curr = str.charAt(index);
         subSequence(str, index+1, newString+curr);
         subSequence(str, index+1, newString);
+    }
+
+    static void uniqueSubSequence(String str, int index, String newString, HashSet<String> set){
+        if (index == str.length()){
+            if (set.contains(newString)){
+                return;
+            }else{
+                System.out.println(newString);
+                set.add(newString);
+                return;
+            }
+        }
+        char curr = str.charAt(index);
+        uniqueSubSequence(str, index+1, newString, set);
+        uniqueSubSequence(str, index+1, newString+curr, set);
     }
 
     public static void main(String[] args) {
