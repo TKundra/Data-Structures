@@ -95,6 +95,7 @@ public class RecursionQuestions {
     }
 
     static void uniqueSubSequence(String str, int index, String newString, HashSet<String> set){
+        /* new function by devT */
         if (index == str.length()){
             if (set.contains(newString)){
                 return;
