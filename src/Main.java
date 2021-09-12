@@ -70,57 +70,6 @@
 
 class Main {
     
-    static class Node {
-        int key;
-        Node left, right;
-        Node(int key){
-            this.key = key;
-            left = right = null;
-        }
-    }
-
-    Node root;
-
-    static class NodeInfo {
-        int min, max, size, ans;
-        boolean isBST;
-        NodeInfo(){}
-        public NodeInfo(int min, int max, int size, int ans, boolean isBST) {
-            this.min = min;
-            this.max = max;
-            this.size = size;
-            this.ans = ans;
-            this.isBST = isBST;
-        }
-    }
-
-    static int MIN = Integer.MIN_VALUE;
-    static int MAX = Integer.MAX_VALUE;
-    static NodeInfo largestBST(Node node){
-        if (node == null)
-            return new NodeInfo(MIN, MAX, 0, 0, true);
-        if (node.left == null && node.right == null)
-            return new NodeInfo(node.key, node.key, 1, 1, true);
-
-        NodeInfo leftNode = largestBST(node.left);
-        NodeInfo rightNode = largestBST(node.right);
-
-        NodeInfo returnNode = new NodeInfo();
-        returnNode.size = 1+ leftNode.size+ rightNode.size;
-
-        if (leftNode.max<node.key && rightNode.min>node.key && leftNode.isBST && rightNode.isBST){
-            returnNode.min = Math.min(Math.min(leftNode.min, rightNode.min), node.key);
-            returnNode.max = Math.max(Math.min(leftNode.max, rightNode.max), node.key);
-            returnNode.ans = returnNode.size;;
-            returnNode.isBST = true;
-        }
-
-        returnNode.ans = Math.max(leftNode.ans, rightNode.ans);
-        returnNode.isBST = false;
-
-        return returnNode;
-    }
-
     public static void main(String[] args) {
 
     }
