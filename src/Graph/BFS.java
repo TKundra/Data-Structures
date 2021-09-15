@@ -31,9 +31,9 @@ public class BFS {
         while (!queue.isEmpty()){
             source = queue.poll();
             System.out.print(source+" ");
-            /*  get all adjacent vertices of dequeued vertex
-			    if a adjacent has not been visited, then mark
-			    it visited and enqueued it */
+            /*  get all adjacent vertices of dequeued vertex
+			    if a adjacent has not been visited, then mark
+			    it visited and enqueued it */
             for (int neighbour : adjacent[source]){
                 if (!visited[neighbour]){
                     visited[neighbour] = true;
