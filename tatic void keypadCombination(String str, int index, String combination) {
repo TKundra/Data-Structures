@@ -1,0 +1,66 @@
+[33mcommit 1dfa10e52300938515e2ce5d6b35ee938301002f[m[33m ([m[1;36mHEAD -> [m[1;32mdevT[m[33m)[m
+Author: Tarun <tk@gmail.com>
+Date:   Sun Sep 12 12:01:06 2021 +0530
+
+    keypadCombination by recursion added
+
+[33mcommit 4e3369edd1587c888c538da55e2f94442078c845[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Tarun <tk@gmail.com>
+Date:   Sun Sep 12 10:19:49 2021 +0530
+
+    new comment in functionality created by devT
+
+[33mcommit c59a867e370e8955fd0379411eab981f84fefbe7[m
+Author: Tarun <tk@gmail.com>
+Date:   Sun Sep 12 10:13:10 2021 +0530
+
+    added new functionality in recursion - unique subsequences
+
+[33mcommit b4f7148f137dd0f526925eac48eb6d7befdffd98[m
+Author: Tarun <tk@gmail.com>
+Date:   Sun Sep 12 10:07:53 2021 +0530
+
+    main edited by devT
+
+[33mcommit bede97cb38104b67f9167359f9c654468303c819[m
+Merge: e3475a4 1cac9d3
+Author: Tarun <tk@gmail.com>
+Date:   Sun Sep 12 10:05:37 2021 +0530
+
+    Merge branch 'master' into devT
+
+[33mcommit e3475a410a2b99a79036b232ef006aa223835e52[m
+Author: Tarun <tk@gmail.com>
+Date:   Sun Sep 12 09:59:33 2021 +0530
+
+    main modified by devT
+
+[33mcommit 1cac9d326418cf77cd2c2983e0c752d55ec6aa76[m
+Author: Tarun <tk@gmail.com>
+Date:   Sun Sep 12 09:57:13 2021 +0530
+
+    main modified and added to .gitignore
+
+[33mcommit 730507b184ab21fb03c0ef16cc24c5bd6ebd21ed[m
+Author: Tarun <tk@gmail.com>
+Date:   Sun Sep 12 09:37:51 2021 +0530
+
+    main file
+
+[33mcommit 243d5d88d4b053f64942d778317c1c74ea27bfc7[m
+Author: Tarun <tk@gmail.com>
+Date:   Sun Sep 12 09:34:09 2021 +0530
+
+    main file transferred to .gitignore
+
+[33mcommit dfc86b597b4916d2dfb80904a8b5a71eac036aa7[m
+Author: Tarun <tk@gmail.com>
+Date:   Sun Sep 12 09:28:35 2021 +0530
+
+    main file transferred to .gitignore
+
+[33mcommit 07b8e97480cfdde4e21d04fb287e56bbd3507601[m
+Author: Tarun <tk@gmail.com>
+Date:   Sun Sep 12 08:37:16 2021 +0530
+
+    data structures
