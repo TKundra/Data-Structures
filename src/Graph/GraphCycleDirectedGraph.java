@@ -26,7 +26,7 @@ public class GraphCycleDirectedGraph {
             if (!visited[neighbour]) {
                 if (isCyclicUtil(neighbour, visited, order))
                     return true;
-            }else if (order[neighbour])
+            }else if (order[neighbour]) // if present in order it means it making cycle.
                 return true;
         }
         /*  when backtrack in dfs we making that node absent which was present in order */
