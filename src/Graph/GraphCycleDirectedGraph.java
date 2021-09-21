@@ -20,15 +20,13 @@ public class GraphCycleDirectedGraph {
 
     /*  if present in order, return true */
     boolean isCyclicUtil(int v, boolean[] visited, boolean[] order){
-        if (visited[v])
-            return true;
-        /* check that node present in order, of neighbour node if present cycle present */
-        if (order[v])
-            return true;
         visited[v] = true;
         order[v] = true;
         for (int neighbour : adjacent[v]) {
-            if (isCyclicUtil(neighbour, visited, order))
+            if (!visited[neighbour]) {
+                if (isCyclicUtil(neighbour, visited, order))
+                    return true;
+            }else if (order[neighbour])
                 return true;
         }
         /*  when backtrack in dfs we making that node absent which was present in order */
@@ -48,8 +46,9 @@ public class GraphCycleDirectedGraph {
         }
         // call recursive helper function to detect cycle in different DFS trees
         for (int u=0; u<vertices; u++) {
-            if (isCyclicUtil(u, visited, order))
-                return true;
+            if (!visited[u])
+                if (isCyclicUtil(u, visited, order))
+                    return true;
         }
         return false;
     }
